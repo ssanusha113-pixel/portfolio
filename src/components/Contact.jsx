@@ -32,7 +32,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://github.com/"
+            href="https://github.com/ssanusha113-pixel"
             target="_blank"
             className="px-8 py-4 border border-cyan-400 hover:bg-cyan-400/10 rounded-2xl font-semibold transition"
           >

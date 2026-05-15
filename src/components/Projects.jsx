@@ -52,12 +52,12 @@ function Projects() {
         {/* Heading */}
         <div className="text-center mb-20">
 
-          <p className="text-cyan-400 text-lg mb-4">
+          <p className="text-cyan-400 text-4xl font-bold mb-4">
             Projects
           </p>
 
-          <h2 className="text-5xl font-bold">
-            Featured Work
+          <h2 className="text-1xl font-bold">
+            Hands-on cloud, networking, and security projects demonstrating real-world skills.
           </h2>
 
         </div>
