@@ -12,32 +12,53 @@ const projects = [
       "EC2",
       "EBS",
     ],
+
+    github:
+      "https://github.com/ssanusha113-pixel",
+
+    documentation:
+      "https://1drv.ms/b/c/87e7a6c2bee4e49e/IQCKyguYpVASRK2y9myi8-I4Ad6EWS1F5AESUOMyhQkG4ic?e=Ek0Y9C",
   },
 
   {
-    title: "Dockerized Web App",
+    title: "Secure File Sharing With S3 And CloudFront",
 
     description:
-      "Containerized React application using Docker with production deployment.",
+      "Implemented a secure file-sharing service using AWS S3, CloudFront, IAM, and Lambda for protected file access.",
 
     tech: [
-      "React",
-      "Docker",
-      "Nginx",
+      "S3",
+      "CloudFront",
+      "IAM",
+      "Lambda",
     ],
+
+    github:
+      "https://github.com/ssanusha113-pixel",
+
+    documentation:
+      "https://1drv.ms/b/c/87e7a6c2bee4e49e/IQCKyguYpVASRK2y9myi8-I4Ad6EWS1F5AESUOMyhQkG4ic?e=Ek0Y9C",
   },
 
   {
-    title: "AWS Cloud Deployment",
+    title: "Custom VPC Setup with Bastion Host & NAT Gateway",
 
     description:
-      "Hosted scalable applications on AWS with EC2, S3, and Load Balancer.",
+      "Built a secure AWS network architecture using custom VPC, public/private subnets, Bastion Host, and NAT Gateway.",
 
     tech: [
       "AWS",
+      "VPC",
       "EC2",
-      "S3",
+      "NAT Gateway",
+      "Security Groups",
     ],
+
+    github:
+      "https://github.com/ssanusha113-pixel",
+
+    documentation:
+      "https://1drv.ms/b/c/87e7a6c2bee4e49e/IQAvumvcV3ViT6zREd5M5xt5AQ879zyB4skI57Pnh3ZoT_I?e=VMfbOU",
   },
 ]
 
@@ -56,7 +77,7 @@ function Projects() {
             Projects
           </p>
 
-          <h2 className="text-1xl font-bold">
+          <h2 className="text-xl font-bold">
             Hands-on cloud, networking, and security projects demonstrating real-world skills.
           </h2>
 
@@ -71,16 +92,18 @@ function Projects() {
               className="bg-slate-900 border border-white/10 rounded-3xl p-8 hover:border-cyan-400 hover:-translate-y-3 transition duration-300"
             >
 
-              <h3 className="text-3xl font-bold mb-4">
+              {/* Title */}
+              <h3 className="text-2xl font-bold mb-4">
                 {project.title}
               </h3>
 
+              {/* Description */}
               <p className="text-gray-400 leading-7 mb-6">
                 {project.description}
               </p>
 
               {/* Tech Tags */}
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 mb-8">
 
                 {project.tech.map((item) => (
                   <span
@@ -90,6 +113,29 @@ function Projects() {
                     {item}
                   </span>
                 ))}
+
+              </div>
+
+              {/* Buttons */}
+              <div className="flex gap-4">
+
+                {/* View Details */}
+                <a
+                  href={project.documentation}
+                  target="_blank"
+                  className="px-4 py-2 bg-cyan-500 hover:bg-cyan-400 rounded-xl font-semibold transition"
+                >
+                  View Details
+                </a>
+
+                {/* GitHub */}
+                <a
+                  href={project.github}
+                  target="_blank"
+                  className="px-4 py-2 border border-cyan-400 rounded-xl hover:bg-cyan-400/10 transition"
+                >
+                  GitHub
+                </a>
 
               </div>
 
