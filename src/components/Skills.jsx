@@ -29,8 +29,8 @@ function Skills() {
             Skills
           </p>
 
-          <h2 className="text-5xl font-bold">
-            Technologies I Use
+          <h2 className="text-4xl font-bold">
+            Skills & Technologies
           </h2>
 
         </div>

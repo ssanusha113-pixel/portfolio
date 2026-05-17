@@ -1,4 +1,4 @@
-function Project1() {
+function Project3() {
   return (
     <div className="min-h-screen bg-slate-950 text-white px-6 py-20">
 
@@ -14,14 +14,13 @@ function Project1() {
 
         {/* Title */}
         <h1 className="text-5xl font-bold mb-8">
-          Automated Backup & Recovery System
+          Custom VPC Setup with Bastion Host and NAT Gateway
         </h1>
 
         {/* Description */}
         <p className="text-gray-400 text-lg leading-8 mb-10">
-          Built an AWS serverless backup automation system using
-          Lambda, EventBridge, EC2, and EBS snapshots with automated
-          retention policy management.
+          Built a secure AWS network architecture using custom VPC,
+          public/private subnets, Bastion Host, and NAT Gateway.
         </p>
 
         {/* Tech Stack */}
@@ -32,11 +31,7 @@ function Project1() {
           </span>
 
           <span className="px-4 py-2 border border-cyan-400 rounded-xl">
-            Lambda
-          </span>
-
-          <span className="px-4 py-2 border border-cyan-400 rounded-xl">
-            EventBridge
+            VPC
           </span>
 
           <span className="px-4 py-2 border border-cyan-400 rounded-xl">
@@ -44,7 +39,7 @@ function Project1() {
           </span>
 
           <span className="px-4 py-2 border border-cyan-400 rounded-xl">
-            EBS
+            NAT Gateway
           </span>
 
         </div>
@@ -57,22 +52,22 @@ function Project1() {
           </h2>
 
           <p className="text-gray-400 leading-8">
-            This project automates backup and recovery workflows
-            for AWS EC2 instances using Lambda functions and
-            EventBridge scheduling.
+            This project demonstrates secure AWS networking using
+            Bastion Host architecture and private subnet routing.
           </p>
 
         </div>
 
-        {/* GitHub Button */}
+        {/* GitHub */}
         <a
           href="https://github.com/ssanusha113-pixel"
-          className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 rounded-xl font-semibold transition inline-block"
+         
+          className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 rounded-xl font-semibold transition"
         >
           GitHub Repository
         </a>
 
-        {/* PDF Preview */}
+        {/* Documentation Preview */}
         <div className="mt-16 w-full">
 
           <h2 className="text-3xl font-bold mb-6">
@@ -82,7 +77,7 @@ function Project1() {
           <div className="border border-white/10 rounded-3xl overflow-hidden">
 
             <iframe
-              src="/Automated_Backup_Recovery_System.pdf"
+              src="/Custom VPC Setup with Bastion Host and NAT Gateway.pdf"
               width="100%"
               height="900px"
               className="rounded-3xl"
@@ -99,4 +94,4 @@ function Project1() {
   )
 }
 
-export default Project1
+export default Project3

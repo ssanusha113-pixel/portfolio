@@ -13,11 +13,7 @@ const projects = [
       "EBS",
     ],
 
-    github:
-      "https://github.com/ssanusha113-pixel",
-
-    documentation:
-      "https://1drv.ms/b/c/87e7a6c2bee4e49e/IQCKyguYpVASRK2y9myi8-I4Ad6EWS1F5AESUOMyhQkG4ic?e=Ek0Y9C",
+    link: "/project1",
   },
 
   {
@@ -33,11 +29,7 @@ const projects = [
       "Lambda",
     ],
 
-    github:
-      "https://github.com/ssanusha113-pixel",
-
-    documentation:
-      "https://1drv.ms/b/c/87e7a6c2bee4e49e/IQCKyguYpVASRK2y9myi8-I4Ad6EWS1F5AESUOMyhQkG4ic?e=Ek0Y9C",
+    link: "/project2",
   },
 
   {
@@ -54,11 +46,7 @@ const projects = [
       "Security Groups",
     ],
 
-    github:
-      "https://github.com/ssanusha113-pixel",
-
-    documentation:
-      "https://1drv.ms/b/c/87e7a6c2bee4e49e/IQAvumvcV3ViT6zREd5M5xt5AQ879zyB4skI57Pnh3ZoT_I?e=VMfbOU",
+    link: "/project3",
   },
 ]
 
@@ -121,21 +109,13 @@ function Projects() {
 
                 {/* View Details */}
                 <a
-                  href={project.documentation}
-                  target="_blank"
+                 href={project.link}
+                 
                   className="px-4 py-2 bg-cyan-500 hover:bg-cyan-400 rounded-xl font-semibold transition"
                 >
                   View Details
                 </a>
 
-                {/* GitHub */}
-                <a
-                  href={project.github}
-                  target="_blank"
-                  className="px-4 py-2 border border-cyan-400 rounded-xl hover:bg-cyan-400/10 transition"
-                >
-                  GitHub
-                </a>
 
               </div>
 
