@@ -4,51 +4,75 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden px-6"
     >
 
       {/* Glow Effect */}
       <div className="absolute w-[500px] h-[500px] bg-cyan-500/20 rounded-full blur-3xl"></div>
 
-      {/* Content */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-center z-10 px-6"
-      >
+      <div className="max-w-7xl mx-auto w-full z-10">
 
-        <p className="text-cyan-400 text-lg mb-4">
-          Hello, I'm
-        </p>
+        <div className="grid md:grid-cols-2 gap-16 items-center">
 
-        <h1 className="text-6xl md:text-8xl font-bold mb-6">
-          Anusha S
-        </h1>
+          {/* LEFT SIDE */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
 
-        <p className="text-gray-400 text-xl md:text-2xl max-w-2xl mx-auto">
-          Cloud & DevOps Enthusiast
-        </p>
+            <p className="text-cyan-400 text-lg mb-4">
+              Hello, I'm
+            </p>
 
-        <div className="mt-10 flex gap-4 justify-center">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6">
+              Anusha S
+            </h1>
 
-          <a
-  href="#projects"
-  className="px-8 py-3 bg-cyan-500 hover:bg-cyan-400 rounded-xl font-semibold transition"
->
-  View Projects
-</a>
+            <p className="text-gray-400 text-xl md:text-2xl max-w-2xl">
+              Cloud & DevOps Enthusiast
+            </p>
 
-          <a
-  href="#contact"
-  className="px-8 py-3 border border-cyan-400 hover:bg-cyan-400/10 rounded-xl font-semibold transition"
->
-  Contact Me
-</a>
+            {/* Buttons */}
+            <div className="mt-10 flex gap-4">
+
+              <a
+                href="#projects"
+                className="px-8 py-3 bg-cyan-500 hover:bg-cyan-400 rounded-xl font-semibold transition"
+              >
+                View Projects
+              </a>
+
+              <a
+                href="#contact"
+                className="px-8 py-3 border border-cyan-400 hover:bg-cyan-400/10 rounded-xl font-semibold transition"
+              >
+                Contact Me
+              </a>
+
+            </div>
+
+          </motion.div>
+
+          {/* RIGHT SIDE IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center"
+          >
+
+            <img
+              src="/profile.jpg"
+              alt="Anusha"
+              className="w-[350px] h-[350px] object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
+            />
+
+          </motion.div>
 
         </div>
 
-      </motion.div>
+      </div>
 
     </section>
   )
