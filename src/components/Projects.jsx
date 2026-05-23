@@ -48,6 +48,72 @@ const projects = [
 
     link: "/project3",
   },
+
+  {
+    title: "Multi-Region Disaster Recovery Architecture",
+
+    description:
+      "Designed a disaster recovery architecture using CloudFormation and Route 53 for automated failover and business continuity.",
+
+    tech: [
+      "AWS",
+      "CloudFormation",
+      "Route53",
+      "EC2",
+    ],
+
+    link: "/project4",
+  },
+
+  {
+    title: "Scalable Microservices Architecture with ECS and Fargate",
+
+    description:
+      "Containerized microservices deployed using ECS Fargate, Docker, ALB, ECR, and Amazon RDS.",
+
+    tech: [
+      "ECS",
+      "Fargate",
+      "Docker",
+      "RDS",
+      "ALB",
+    ],
+
+    link: "/project5",
+  },
+
+  {
+    title: "AWS Cost Monitoring & Budget Alerts",
+
+    description:
+      "Implemented an AWS-based cost monitoring system that tracks cloud spending and sends automated budget alert notifications.",
+
+    tech: [
+      "AWS Budgets",
+      "Cost Explorer",
+      "Lambda",
+      "SES",
+    ],
+
+    link: "/project6",
+  },
+
+  {
+    title: "Serverless Image-Video Processing",
+
+    description:
+      "Implemented a serverless AWS-based image processing system for automated image analysis and notifications.",
+
+    tech: [
+      "S3",
+      "Lambda",
+      "Step Functions",
+      "Rekognition",
+      "SNS",
+    ],
+
+    link: "/project7",
+  },
 ]
 
 function Projects() {
@@ -56,7 +122,7 @@ function Projects() {
       id="projects"
       className="py-32 px-6"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
         <div className="text-center mb-20">
@@ -65,23 +131,23 @@ function Projects() {
             Projects
           </p>
 
-          <h2 className="text-xl font-bold">
+          <h2 className="text-xl font-bold text-white">
             Hands-on cloud, networking, and security projects demonstrating real-world skills.
           </h2>
 
         </div>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Project Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-slate-900 border border-white/10 rounded-3xl p-8 hover:border-cyan-400 hover:-translate-y-3 transition duration-300"
+              className="bg-slate-900 border border-white/10 rounded-3xl p-8 hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
             >
 
               {/* Title */}
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl font-bold mb-4 text-white">
                 {project.title}
               </h3>
 
@@ -90,13 +156,13 @@ function Projects() {
                 {project.description}
               </p>
 
-              {/* Tech Tags */}
+              {/* Tech Stack */}
               <div className="flex flex-wrap gap-3 mb-8">
 
                 {project.tech.map((item) => (
                   <span
                     key={item}
-                    className="px-4 py-2 bg-cyan-500/10 border border-cyan-400/20 rounded-full text-sm"
+                    className="px-4 py-2 bg-cyan-500/10 border border-cyan-400/20 rounded-full text-sm text-cyan-300"
                   >
                     {item}
                   </span>
@@ -104,20 +170,13 @@ function Projects() {
 
               </div>
 
-              {/* Buttons */}
-              <div className="flex gap-4">
-
-                {/* View Details */}
-                <a
-                 href={project.link}
-                 
-                  className="px-4 py-2 bg-cyan-500 hover:bg-cyan-400 rounded-xl font-semibold transition"
-                >
-                  View Details
-                </a>
-
-
-              </div>
+              {/* Button */}
+              <a
+                href={project.link}
+                className="inline-block px-5 py-3 bg-cyan-500 hover:bg-cyan-400 rounded-xl font-semibold transition"
+              >
+                View Details
+              </a>
 
             </div>
           ))}
