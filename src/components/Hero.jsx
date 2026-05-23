@@ -30,7 +30,7 @@ function Hero() {
             </h1>
 
             <p className="text-gray-400 text-xl md:text-2xl max-w-2xl">
-              Cloud & DevOps Enthusiast
+              Cloud & DevOps Engineer
             </p>
 
             {/* Buttons */}
