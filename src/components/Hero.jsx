@@ -12,7 +12,7 @@ function Hero() {
 
       <div className="max-w-7xl mx-auto w-full z-10">
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+       <div className="flex flex-col items-center justify-center text-center">
 
           {/* LEFT SIDE */}
           <motion.div
@@ -34,7 +34,7 @@ function Hero() {
             </p>
 
             {/* Buttons */}
-            <div className="mt-10 flex gap-4">
+            <div className="mt-10 flex gap-9">
 
               <a
                 href="#projects"
@@ -55,12 +55,12 @@ function Hero() {
           </motion.div>
 
           {/* RIGHT SIDE IMAGE */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="flex justify-center"
-          >
+         <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  className="flex flex-col items-center"
+>
 
           </motion.div>
 
