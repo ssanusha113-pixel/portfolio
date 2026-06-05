@@ -86,7 +86,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="py-32 px-6"
+      className="py-12 px-6"
     >
       <div className="max-w-7xl mx-auto">
 

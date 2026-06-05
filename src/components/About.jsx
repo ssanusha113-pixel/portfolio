@@ -2,7 +2,7 @@ function About() {
   return (
     <section
       id="about"
-      className="py-32 px-6"
+      className="py-12 px-6"
     >
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">

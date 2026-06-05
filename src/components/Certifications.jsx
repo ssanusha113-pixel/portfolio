@@ -39,7 +39,7 @@ function Certifications() {
   return (
     <section
       id="certifications"
-      className="py-32 px-6"
+      className="py-16 px-6"
     >
 
       <div className="max-w-3xl mx-auto">
