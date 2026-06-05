@@ -62,12 +62,6 @@ function Hero() {
             className="flex justify-center"
           >
 
-            <img
-              src="/profile.jpg"
-              alt="Anusha"
-              className="w-[350px] h-[350px] object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
-            />
-
           </motion.div>
 
         </div>
